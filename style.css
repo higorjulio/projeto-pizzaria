@@ -4,16 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --cor1: #ffb560;
+    --cor2: #7cbb48;
+}
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #e0b3b3;
+    background-color: var(--cor1);
 }
-
+::selection{
+    color: var(--cor2);
+    background-color: #1a1a1a;
+}
 /* Estilos do cabeçalho e navegação */
 header {
+    opacity: 0.5;
     background-color: #1a1a1a;
     padding: 1rem 0;
     position: fixed;
@@ -21,7 +29,6 @@ header {
     top: 0;
     z-index: 1000;
 }
-
 nav ul {
     display: flex;
     justify-content: center;
@@ -43,9 +50,9 @@ nav a:hover {
 
 /* Seção Hero */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
+    background-size: auto;
     background-position: center;
     height: 100vh;
     display: flex;
@@ -55,7 +62,6 @@ nav a:hover {
     text-align: center;
     color: #fff;
     padding: 0 1rem;
-    margin-top: 60px;
 }
 
 .hero h1 {
@@ -68,11 +74,14 @@ nav a:hover {
     font-size: 1.5rem;
     max-width: 600px;
 }
-
+#pizzas-salgadas{
+    background: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-size: auto;
+}
 /* Seções do menu */
 .menu-section {
     padding: 4rem 2rem;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -145,7 +154,7 @@ nav a:hover {
     display: block;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #e63946;
+    color: #7bd826;
 }
 
 /* Rodapé */
@@ -205,7 +214,27 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Ajuste para o cabeçalho fixo */
-body {
-    padding-top: 60px;
+#topo{
+    position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
+#topo.show{
+    opacity: 1;
+    visibility: visible;
 }
