@@ -6,7 +6,7 @@
 }
 :root{
     --cor1: #ffb560;
-    --cor2: #ffff;
+    --cor2: #7cbb48;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 ::selection{
     color: var(--cor2);
-    background-color: #999;
+    background-color: #1a1a1a;
 }
 /* Estilos do cabeçalho e navegação */
 header {
