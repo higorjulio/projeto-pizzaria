@@ -21,3 +21,36 @@ window.addEventListener("scroll", () => {
     top: 0
    })
 })
+// Menu mobile toggle
+const menuBtn = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav.nav-links');
+
+menuBtn.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+
+// Fecha menu ao clicar num link
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+  });
+});
+
+// Botão "voltar ao topo"
+document.getElementById("topo").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// Animações com scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.menu-item, .hero, .menu-section h2').forEach(el => {
+  el.classList.add('hidden');
+  observer.observe(el);
+});
