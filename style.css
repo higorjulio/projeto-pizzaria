@@ -9,7 +9,6 @@
   --sombra-hover: rgba(0, 0, 0, 0.25);
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -143,7 +142,7 @@ nav a:hover {
   color: white;
   border: none;
   border-radius: 50%;
-  padding: 0.8rem 1.1rem;
+  padding: 0.7rem 1.1rem;
   font-size: 1.3rem;
   cursor: pointer;
   opacity: 0;
