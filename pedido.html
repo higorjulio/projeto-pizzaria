@@ -2,51 +2,71 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fazer Pedido - Deu Pizza!</title>
   <link rel="stylesheet" href="pedido.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <section class="menu-section">
-    <h2>Monte seu pedido</h2>
+    <h2>🍕 Monte seu pedido</h2>
     <form id="pedido-form" action="entrega.html" target="_blank">
-      <label for="sabor">Pizza Salgada ou Doce:</label>
-      <select id="sabor" name="sabor" required>
-        <option value="">Selecione</option>
-        <optgroup label="Pizzas Salgadas">
-          <option value="Margherita Premium">Margherita Premium</option>
-          <option value="Quatro Queijos Gourmet">Quatro Queijos Gourmet</option>
-          <option value="Frango Trufado">Frango Trufado</option>
-        </optgroup>
-        <optgroup label="Pizzas Doces">
-          <option value="Chocolate Belga">Chocolate Belga</option>
-          <option value="Romeu e Julieta">Romeu e Julieta</option>
-        </optgroup>
-      </select>
-      <br><br>
-      <label for="bebida">Bebida:</label>
-      <select id="bebida" name="bebida">
-        <option value="">Nenhuma</option>
-        <option value="Coca-Cola 350ml">Coca-Cola 350ml</option>
-        <option value="Guaraná 350ml">Guaraná 350ml</option>
-        <option value="Suco de Laranja Natural 500ml">Suco de Laranja Natural 500ml</option>
-        <option value="Suco de Maracujá 500ml">Suco de Maracujá 500ml</option>
-        <option value="Red Bull 250ml">Red Bull 250ml</option>
-        <option value="Monster 473ml">Monster 473ml</option>
-        <option value="Mojito">Mojito</option>
-        <option value="Caipirinha">Caipirinha</option>
-        <option value="Vinho Tinto 750ml">Vinho Tinto 750ml</option>
-        <option value="Chopp Artesanal 500ml">Chopp Artesanal 500ml</option>
-      </select>
-      <br><br>
-      <label for="sobremesa">Sobremesa:</label>
-      <select id="sobremesa" name="sobremesa">
-        <option value="">Nenhuma</option>
-        <option value="Tiramisù">Tiramisù</option>
-        <option value="Petit Gateau">Petit Gateau</option>
-      </select>
-      <br><br>
-      <button type="submit">Prosseguir</button>
-      <button id="voltar" type="button">Voltar</button>
+      <div class="campo">
+        <label for="sabor">Pizza Salgada ou Doce:</label>
+        <select id="sabor" name="sabor" required>
+          <option value="">Selecione uma pizza</option>
+          <optgroup label="Pizzas Salgadas">
+            <option value="Margherita Premium">Margherita Premium</option>
+            <option value="Quatro Queijos Gourmet">Quatro Queijos Gourmet</option>
+            <option value="Frango Trufado">Frango Trufado</option>
+          </optgroup>
+          <optgroup label="Pizzas Doces">
+            <option value="Chocolate Belga">Chocolate Belga</option>
+            <option value="Romeu e Julieta">Romeu e Julieta</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="bebida">Bebida:</label>
+        <select id="bebida" name="bebida">
+          <option value="">Nenhuma bebida</option>
+          <optgroup label="Refrigerantes">
+            <option value="Coca-Cola 350ml">Coca-Cola 350ml</option>
+            <option value="Guaraná 350ml">Guaraná 350ml</option>
+          </optgroup>
+          <optgroup label="Sucos">
+            <option value="Suco de Laranja Natural 500ml">Suco de Laranja Natural 500ml</option>
+            <option value="Suco de Maracujá 500ml">Suco de Maracujá 500ml</option>
+          </optgroup>
+          <optgroup label="Energéticos">
+            <option value="Red Bull 250ml">Red Bull 250ml</option>
+            <option value="Monster 473ml">Monster 473ml</option>
+          </optgroup>
+          <optgroup label="Drinks">
+            <option value="Mojito">Mojito</option>
+            <option value="Caipirinha">Caipirinha</option>
+          </optgroup>
+          <optgroup label="Bebidas Alcoólicas">
+            <option value="Vinho Tinto 750ml">Vinho Tinto 750ml</option>
+            <option value="Chopp Artesanal 500ml">Chopp Artesanal 500ml</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="sobremesa">Sobremesa:</label>
+        <select id="sobremesa" name="sobremesa">
+          <option value="">Nenhuma sobremesa</option>
+          <option value="Tiramisù">Tiramisù</option>
+          <option value="Petit Gateau">Petit Gateau</option>
+        </select>
+      </div>
+
+      <div class="botoes">
+        <button type="submit">Prosseguir</button>
+        <button id="voltar" type="button">Voltar</button>
+      </div>
     </form>
     <div id="status-pedido"></div>
   </section>
