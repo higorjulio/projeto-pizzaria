@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Fazer Pedido - Deu Pizza!</title>
-  
-  <!-- ou cria um novo arquivo ou usa o mesmo || Depois apaga isso daqui -->
-  
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pedido.css">
 </head>
 <body>
   <section class="menu-section">
     <h2>Monte seu pedido</h2>
-    <form id="pedido-form">
+    <form id="pedido-form" action="entrega.html" target="_blank">
       <label for="sabor">Pizza Salgada ou Doce:</label>
       <select id="sabor" name="sabor" required>
         <option value="">Selecione</option>
@@ -48,10 +45,7 @@
         <option value="Petit Gateau">Petit Gateau</option>
       </select>
       <br><br>
-      <label for="endereco">Endereço de entrega:</label>
-      <input type="text" id="endereco" name="endereco" required>
-      <br><br>
-      <button type="submit">Fazer Pedido</button>
+      <button type="submit">Prosseguir</button>
       <button id="voltar" type="button">Voltar</button>
     </form>
     <div id="status-pedido"></div>

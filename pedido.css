@@ -1,0 +1,88 @@
+/*pedido e entrega*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff7f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.pedido-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.pedido-container h1 {
+  color: #e85d04;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.pedido-container p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.formulario .campo {
+  margin-bottom: 20px;
+}
+
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border-color: #e85d04;
+  outline: none;
+}
+
+button {
+  background-color: #e85d04;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d9480f;
+}
+
+.botoes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.botoes button[type="button"] {
+  margin-left: 2rem; /* desloca o botão Voltar para o lado */
+  background-color: #e85d04;
+  color: #ddd;
+}
+
+.botoes button[type="button"]:hover {
+  background-color: #d9480f;
+}
+
