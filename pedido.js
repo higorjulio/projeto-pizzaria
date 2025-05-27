@@ -5,7 +5,7 @@ const botaoVoltar = document.getElementById('voltar');
 let pedidoAtual = null;
 
 botaoVoltar.addEventListener("click", () =>{
-  window.location.href = 'index.html';
+  window.location.href = 'home.html';
 })
 
 
