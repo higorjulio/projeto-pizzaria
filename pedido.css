@@ -1,0 +1,173 @@
+/* Variáveis de cores e estilos globais */
+:root {
+  --vermelho: #c0392b;        
+  --vermelho-escuro: #8e1b11; 
+  --creme: #fff8f0;           
+  --dourado: #f6c90e;       
+  --cinza-escuro: #2c2c2c;    
+  --sombra: rgba(0, 0, 0, 0.15);      
+  --sombra-hover: rgba(0, 0, 0, 0.25); 
+}
+
+/* Estilos base do corpo da página */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--creme);
+  margin: 0;
+  padding: 0;
+  color: var(--cinza-escuro);
+  min-height: 100vh;          
+  display: flex;              
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal do formulário */
+.menu-section {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px var(--sombra);
+  width: 90%;
+  max-width: 600px;           
+  margin: 2rem auto;
+}
+
+/* Título da seção */
+.menu-section h2 {
+  color: var(--vermelho);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+/* Layout do formulário */
+#pedido-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;              
+}
+
+/* Estilo dos labels */
+#pedido-form label {
+  display: block;
+  font-weight: 600;
+  color: var(--cinza-escuro);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Estilo dos campos select */
+#pedido-form select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--cinza-escuro);
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;  
+}
+
+/* Efeito hover nos selects */
+#pedido-form select:hover {
+  border-color: var(--vermelho);
+}
+
+/* Efeito focus nos selects */
+#pedido-form select:focus {
+  outline: none;
+  border-color: var(--vermelho);
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1); 
+}
+
+/* Estilo dos grupos de opções */
+#pedido-form optgroup {
+  font-weight: 600;
+  color: var(--vermelho);
+}
+
+/* Estilo das opções individuais */
+#pedido-form option {
+  font-weight: normal;
+  color: var(--cinza-escuro);
+  padding: 8px;
+}
+
+/* Container dos botões */
+#pedido-form .botoes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Estilo base dos botões */
+#pedido-form button {
+  flex: 1;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo do botão de submit */
+#pedido-form button[type="submit"] {
+  background-color: var(--vermelho);
+  color: white;
+}
+
+/* Efeito hover no botão de submit */
+#pedido-form button[type="submit"]:hover {
+  background-color: var(--vermelho-escuro);
+  transform: translateY(-2px);    
+  box-shadow: 0 4px 12px var(--sombra-hover);
+}
+
+/* Estilo do botão voltar */
+#pedido-form button[type="button"] {
+  background-color: #f0f0f0;
+  color: var(--cinza-escuro);
+}
+
+/* Efeito hover no botão voltar */
+#pedido-form button[type="button"]:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--sombra);
+}
+
+/* Área de status do pedido */
+#status-pedido {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--cinza-escuro);
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  .menu-section {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .menu-section h2 {
+    font-size: 1.75rem;      /* Título menor em telas pequenas */
+  }
+
+  #pedido-form button {
+    padding: 12px 20px;      /* Botões menores em telas pequenas */
+  }
+}
+

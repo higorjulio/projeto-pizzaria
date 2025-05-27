@@ -1,230 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deu Pizza!</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deu Pizza! - Página Inicial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabeçalho com navegação -->
-    <header>
-  <div class="nav-container">
-    <div class="logo">🍕 Deu Pizza!</div>
-    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-    <nav class="nav-links">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#pizzas-salgadas">Pizzas Salgadas</a></li>
-        <li><a href="#pizzas-doces">Pizzas Doces</a></li>
-        <li><a href="#bebidas">Bebidas</a></li>
-        <li><a href="#sobremesas">Sobremesas</a></li>
-        <li><a href="pedido.html">Peça já!</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<button id="topo" aria-label="Voltar ao topo">↑</button>
-    <!-- Seção Home -->
-    <section id="home" class="hero">
-        <h1>Deu Pizza!</h1>
-        <p>A melhor pizza da cidade, com os melhores ingredientes!</p>
-    </section>
 
-    <!-- Seção Pizzas Salgadas -->
-    <section id="pizzas-salgadas" class="menu-section">
-        <h2>Pizzas Salgadas</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h3>Margherita Premium</h3>
-                <p>Molho de tomate, mussarela de búfala, tomate cereja e manjericão</p>
-                <span class="price">R$ 89,90</span>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h3>Quatro Queijos Gourmet</h3>
-                <p>Mussarela, gorgonzola, parmesão e catupiry</p>
-                <span class="price">R$ 95,90</span>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h3>Frango Trufado</h3>
-                <p>Frango desfiado, molho trufado, catupiry e azeitonas</p>
-                <span class="price">R$ 92,90</span>
-            </div>
-        </div>
-    </section>
+  <main>
+    <h1>Bem-vindo à Deu Pizza!</h1>
+    <p>A pizza perfeita está a apenas alguns cliques de distância. Sabores irresistíveis, massas artesanais e ingredientes frescos preparados com muito carinho para você!</p>
+    <button class="botao-pedir" onclick="location.href='home.html'">Ir para o cardapio</button>
+  </main>
 
-    <!-- Seção Pizzas Doces -->
-    <section id="pizzas-doces" class="menu-section">
-        <h2>Pizzas Doces</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h3>Chocolate Belga</h3>
-                <p>Chocolate belga, morangos e chantilly</p>
-                <span class="price">R$ 78,90</span>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h3>Romeu e Julieta</h3>
-                <p>Goiabada e queijo brie</p>
-                <span class="price">R$ 82,90</span>
-            </div>
-        </div>
-    </section>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
 
-    <!-- Seção Bebidas -->
-    <section id="bebidas" class="menu-section">
-        <h2>Bebidas</h2>
-        
-        <h3>Refrigerantes</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Coca-Cola 350ml</h4>
-                <span class="price">R$ 12,90</span>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Guaraná 350ml</h4>
-                <span class="price">R$ 12,90</span>
-            </div>
-        </div>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url("https://img.freepik.com/fotos-premium/pizza-de-pepperoni-com-manjericao-fresco_1082794-43242.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-        <h3>Sucos</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Suco de Laranja Natural 500ml</h4>
-                <span class="price">R$ 18,90</span>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Suco de Maracujá 500ml</h4>
-                <span class="price">R$ 18,90</span>
-            </div>
-        </div>
+    main {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: auto;
+      max-width: 700px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+     footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 16px 12px;
+      font-size: 14px;
+      color: #fff;
+      z-index: 10;
+    }
 
-        <h3>Energéticos</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Red Bull 250ml</h4>
-                <span class="price">R$ 22,90</span>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Monster 473ml</h4>
-                <span class="price">R$ 19,90</span>
-            </div>
-        </div>
+    h1 {
+      font-size: 2.5em;
+      color: #d9480f;
+      margin-bottom: 20px;
+    }
 
-        <h3>Drinks</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Mojito</h4>
-                <span class="price">R$ 32,90</span>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Caipirinha</h4>
-                <span class="price">R$ 28,90</span>
-            </div>
-        </div>
+    p {
+      max-width: 600px;
+      margin: 30px auto;
+      font-size: 1.2em;
+      color: #000;
+    }
 
-        <h3>Bebidas Alcoólicas</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Vinho Tinto 750ml</h4>
-                <span class="price">R$ 120,00</span>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h4>Chopp Artesanal 500ml</h4>
-                <span class="price">R$ 25,90</span>
-            </div>
-        </div>
-    </section>
+    .botao-pedir {
+      margin-top: 40px;
+      padding: 14px 28px;
+      background-color: #e85d04;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
 
-    <!-- Seção Sobremesas -->
-    <section id="sobremesas" class="menu-section">
-        <h2>Sobremesas</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h3>Tiramisù</h3>
-                <p>Clássico tiramisù italiano</p>
-                <span class="price">R$ 32,90</span>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <!-- Área para adicionar foto -->
-                </div>
-                <h3>Petit Gateau</h3>
-                <p>Com sorvete de creme</p>
-                <span class="price">R$ 28,90</span>
-            </div>
-        </div>
-    </section>
+    .botao-pedir:hover {
+      background-color: #d9480f;
+    }
 
-    <!-- Rodapé -->
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Contato</h3>
-                <p>📞 (83) 4002-8922</p>
-                <p>✉️ contato@pizzariadeupizza!.com.br</p>
-                <p>📍 Rodovia BR-230, KM 22 - Água Fria, João Pessoa - PB</p>
-            </div>
-            <div class="opening-hours">
-                <h3>Horário de Funcionamento</h3>
-                <p>Segunda a Quinta: 18h às 23h</p>
-                <p>Sexta e Sábado: 18h às 00h</p>
-                <p>Domingo: 18h às 22h</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Deu Pizza! - Todos os direitos reservados</p>
-        </div>
-    </footer>
+    footer {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        margin: 40px 20px;
+        padding: 40px 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+        margin: 20px auto;
+      }
+
+      .botao-pedir {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.7em;
+      }
+
+      .botao-pedir {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      main {
+        border-radius: 12px;
+      }
+    }
+  </style>
+<footer>
+    © 2025 Deu Pizza! — Todos os direitos reservados.
+  </footer>
+  <script src="logo.js"></script>
 </body>
-<script src="index.js"></script>
-<script src="logo.js"></script>
 </html>
