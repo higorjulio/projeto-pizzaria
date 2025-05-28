@@ -6,7 +6,7 @@
 let pedidoAtual = null;
     
 
-    document.getElementById("form-entrega").addEventListener("submit", function(e) {
+    document.getElementById("pedido-form").addEventListener("submit", function(e) {
       e.preventDefault();
       const endereco = document.getElementById("endereco").value;
       pedidoObj = {

@@ -30,6 +30,26 @@
       </div>
 
       <div class="campo">
+        <div class="tamanho-opcoes">
+          <label>
+            <input type="radio" name="tamanho" value="Pequena" required>
+            (P) Pequena
+          </label>
+          <label>
+            <input type="radio" name="tamanho" value="Média">
+            (M) Média
+          </label>
+          <label>
+            <input type="radio" name="tamanho" value="Grande">
+            (G) Grande
+          </label>
+          <label>
+            <input type="radio" name="tamanho" value="Grande">
+            (GG) Gigante
+          </label>
+      </div>
+
+      <div class="campo">
         <label for="bebida">Bebida:</label>
         <select id="bebida" name="bebida">
           <option value="">Nenhuma bebida</option>
@@ -70,7 +90,6 @@
         <button id="voltar" type="button">Voltar</button>
       </div>
     </form>
-    <div id="status-pedido"></div>
   </section>
 </body>
 <script src="pedido.js"></script>

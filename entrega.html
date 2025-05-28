@@ -8,14 +8,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="pedido-container">
-    <h1>Entrega 🛵</h1>
-    <p>Agora informe o endereço para finalizarmos seu pedido:</p>
+  <div class="menu-section">
+    <h2>Entrega 🛵</h2>
+    <p style="text-align:center">Agora informe o endereço para finalizarmos seu pedido:</p>
 
-    <form id="form-entrega" class="formulario" method="post">
+    <form id="pedido-form" class="formulario" method="post">
       <div class="campo">
-        <label for="endereco">Endereço completo:</label>
-        <textarea id="endereco" name="endereco" rows="3" required placeholder="Rua, número, bairro..."></textarea>
+        <label for="endereco">Endereço completo</label>
+        <label for="endereco">Rua:</label>
+        <input id="endereco" name="endereco" required></textarea>
+        <label for="endereco">Número:</label>
+        <input id="numero" name="endereco" type="number" required> </input>
+        <label for="endereco">Bairro:</label>
+        <input id="endereco" name="endereco" required></input>
       </div>
 
       <div class="botoes">

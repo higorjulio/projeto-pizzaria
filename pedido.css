@@ -1,10 +1,13 @@
+/*Pagina de pedidos e entregas
+
 /* Variáveis de cores e estilos globais */
 :root {
   --vermelho: #c0392b;        
   --vermelho-escuro: #8e1b11; 
   --creme: #fff8f0;           
   --dourado: #f6c90e;       
-  --cinza-escuro: #2c2c2c;    
+  --cinza-escuro: #2c2c2c;
+  --laranja: #e69138;    
   --sombra: rgba(0, 0, 0, 0.15);      
   --sombra-hover: rgba(0, 0, 0, 0.25); 
 }
@@ -70,6 +73,28 @@ body {
   background-color: white;
   cursor: pointer;
   transition: all 0.3s ease;  
+}
+
+/*Tamanho das pizzas*/
+label input[type="radio"], label, input[type="radio"]{
+  display: flex;
+} 
+.tamanho-opcoes {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: flex-start; 
+  margin-bottom: 0.5rem;
+}
+#pedido-form label {
+color: var(--laranja);
+}
+.tamanho-opcoes label,
+.tamanho-opcoes input[type="radio"] {
+  color: var(--cinza-escuro)!important;
+}
+.campo label[for="endereco"]{
+  color: var(--cinza-escuro)!important;
 }
 
 /* Efeito hover nos selects */
@@ -142,16 +167,31 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px var(--sombra);
 }
+/*Endereço*/
+
+input {
+  resize: none;
+  width: 50%;
+}
+#numero{
+  width: 10%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* Área de status do pedido */
 #status-pedido {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   padding: 1rem;
   border-radius: 12px;
   background-color: #f8f8f8;
   text-align: center;
   font-size: 0.9rem;
-  color: var(--cinza-escuro);
+  color: #448257;
 }
 
 /* Estilos responsivos para telas menores */
