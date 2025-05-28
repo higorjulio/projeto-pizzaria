@@ -11,7 +11,7 @@
   <main>
     <h1>Bem-vindo à Deu Pizza!</h1>
     <p>A pizza perfeita está a apenas alguns cliques de distância. Sabores irresistíveis, massas artesanais e ingredientes frescos preparados com muito carinho para você!</p>
-    <button class="botao-pedir" onclick="location.href='home.html'">Ir para o cardapio</button>
+    <button class="botao-pedir" onclick="location.href='home.html'">Ir para o cardápio</button>
   </main>
 
   <style>
@@ -23,7 +23,7 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: url("https://img.freepik.com/fotos-premium/pizza-de-pepperoni-com-manjericao-fresco_1082794-43242.jpg") no-repeat center center fixed;
+      background: url("https://img.freepik.com/fotos-premium/pizza-de-pepperoni-com-manjericao-fresco_1082794-43242.jpg") center center fixed;
       background-size: cover;
       color: #333;
       display: flex;
@@ -34,23 +34,11 @@
     main {
       text-align: center;
       padding: 60px 20px;
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.80);
       margin: auto;
       max-width: 700px;
       border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    }
-     footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      text-align: center;
-      padding: 16px 12px;
-      font-size: 14px;
-      color: #fff;
-      z-index: 10;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
     }
 
     h1 {
@@ -81,20 +69,7 @@
       background-color: #d9480f;
     }
 
-    footer {
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      text-align: center;
-      font-size: 14px;
-      color: #fff;
-    }
-
     @media (max-width: 768px) {
-      main {
-        margin: 40px 20px;
-        padding: 40px 20px;
-      }
-
       h1 {
         font-size: 2em;
       }
@@ -109,25 +84,8 @@
         padding: 12px 20px;
       }
     }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.7em;
-      }
-
-      .botao-pedir {
-        width: 100%;
-        font-size: 16px;
-      }
-
-      main {
-        border-radius: 12px;
-      }
-    }
+    
   </style>
-<footer>
-    © 2025 Deu Pizza! — Todos os direitos reservados.
-  </footer>
   <script src="logo.js"></script>
 </body>
 </html>
