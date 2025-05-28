@@ -35,25 +35,25 @@ pedido.endereco = endereco;
 salvarPedido(pedido);
 // Tempo de entrega
 function iniciarPedido(pedido) {
-  mostrarStatus('Pedido recebido! Aguardando confirmação...', 5);
+  mostrarStatus('Pedido recebido! Aguardando confirmação...', 3);
   // 1 minuto: Aceito
   setTimeout(() => {
-    mostrarStatus('Pedido aceito! Preparando...', 4);
+    mostrarStatus('Pedido aceito! Preparando...', 2);
     pedido.status = 'Aceito';
     salvarPedido(pedido);
   }, 60 * 1000); //60 segundos * 1000 milissegundos
   // 2 minutos: Saiu para entrega
   setTimeout(() => {
-    mostrarStatus('Saiu para entrega!', 3);
+    mostrarStatus('Saiu para entrega!', 1);
     pedido.status = 'Saiu para entrega';
     salvarPedido(pedido);
   }, 2 * 60 * 1000);
-  // 5 minutos: Entregue
+  // 3 minutos: Entregue
   setTimeout(() => {
     mostrarStatus('Pedido entregue! Bom apetite!', 0);
     pedido.status = 'Entregue';
     salvarPedido(pedido);
-  }, 5 * 60 * 1000);
+  }, 3 * 60 * 1000);
 }
 iniciarPedido(pedido);
 // Remove pedido do localStorage
@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
     pedidoAtual = pedido;
 
     let minutos = Math.floor((Date.now() - pedido.criadoEm) / (1000 * 60));
-    if (minutos >= 5 && pedido.status === 'Entregue') {
+    if (minutos >= 3 && pedido.status === 'Entregue') {
       mostrarStatus('Pedido expirado! Por favor, faça um novo pedido.', 0);
       limparPedido();
     }
