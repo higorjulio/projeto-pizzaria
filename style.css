@@ -122,12 +122,11 @@ nav a:hover {
 
 .menu-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px var(--sombra-hover);
+  box-shadow: 0 8px 20px var(--sombra);
 }
 
 .menu-item-image {
   height: 160px;
-  background: #f0f0f0;
   border-radius: 20px;
   margin-bottom: 6rem;
 }
